@@ -130,9 +130,24 @@ $ git stash clear > to clear the staging directory.
 -------------------------------------------
 
 
+Git reset and hard reset 
+
+
+$ cat resetfile 
+
+$ git status 
+
+$ git add .  > add to staging area 
+
+$ git reset .  > remove from staging area.  
+
+$ git reset --hard >> remove from working and staging area. 
 
 
  
+---------------------------------------------
+
+
 
 
 
