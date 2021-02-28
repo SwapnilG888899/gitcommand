@@ -1,0 +1,151 @@
+SwapnilG888899
+Swap@123456
+
+Git 
+
+$yup update -y >> 
+
+$Sudo su  -- change it root user
+
+$yum update -y --- this is used to install new update from linux
+
+$yum install git -y -- used to install git on the machine
+
+$git --version 										> to check the git version
+
+$ git config --global user.name "swap"  			> used to create globla user
+		
+$ git config --global user.email "swap@yahoo.com"  	> used to create globla user mail id
+
+$ git config --list    								> To get the list of all user 
+---------------------------------------
+
+$ mkdir swap  	>>  create one empty directory 
+
+$ cd swap 		>> change directory
+
+$ git init  	>> to make as git local directory
+
+$ touch swap 	> create a file 
+
+$ git add . > this is used to push the files from working area to staging area
+
+$ git commit -m " this is file"  > used to commit the file -m used to give msg 
+
+$ git status  > this is used to show the file status on git repository 
+
+$ git log   > this will show how many commit has been made and who did it. It also show commit id
+
+$ git show <commit id> 
+
+$ git remote add origin https://github.com/SwapnilG888899/Gittest.git > we have to add our central repository account. 
+
+$ git push -u origin master > using this we can push our local code to centeal repository. 
+
+
+-----------------------------------------------
+
+from another machine 
+
+$ git pull -n origin master > this is used to pull the files from the centeal repository before that we may have to add the central repository.
+
+------------------------------------------------------
+
+Ignore files while commiting
+
+$ vi .gitignore   > first we have to create a file with same name and mentioned the format of files which need to ignore. ( we can use any command to create this file_
+
+*.css
+*.java
+*.fmt 
+					Note: mentioned * before the file format
+
+$ git status
+
+$ git add . 
+
+$ git commit
+
+$ touch swap1.css swap2.txt swap3.java swap4.txt  > this will create these file
+
+$ git status  > we can see only 2 files exclude .css .java .fmt format to commit. 
+------------------------------------------------
+
+$ git log -1 > show top latest log 
+
+$ git log -2 > show the top 2 logs 
+
+$ git log --oneline  > show the all commit in one line.
+
+$ git log --grep "ignore"  > show all the commit which include ignore
+
+
+
+---------------------------------------------------
+
+Git branching 
+
+$ git branch  > show the current branch mentioned * before 
+
+$ git branch branch1  > it will create another branch
+
+$ git branch -d test  > delete the test branch 
+
+$ git branch -D test  > delete the test branch even we are working on it. 
+
+Note:  when we create a file in a respective branch until we add or commit is will show in all the branches. Once add or commit then it will reflect in that respective branch
+
+--------------------
+
+Merge branch
+
+$ git merge branch1  > this command mearge branch1 to master we may have to go it from master branch
+
+$ git log  > able to see latest log from branch1on top
+
+
+--------------------------
+
+Git conflict
+
+if 2 files having same name and they want to merge then there will be conflict while meargning the files.
+we have open a vi editor and need to make the changes 
+both file data will reflect there once changes made then we have to add and commit the same. 
+
+------------------------------------
+Git stashing
+
+if we developer got a work in middle of files then git have that option to use stashing so that file will store in temp directory and once another work done we can call that file to finish the 
+pending task. 
+
+$ git stash  > to stash an item means the working directory gets empty so we will perfrom another task. 
+
+$ git stash list > to git stash item list will get staging item id
+
+$ git stash apply stash@ > to apply stashing item , item will recall into working directory. 
+
+$ git stash clear > to clear the staging directory. 
+
+
+-------------------------------------------
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
