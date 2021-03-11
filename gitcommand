@@ -145,7 +145,44 @@ $ git reset --hard >> remove from working and staging area.
 
 
  
----------------------------------------------
+--------------------------------------------
+
+
+git revert
+
+Revert command is used to revert the commit file. we can not delete the commit so revert is the option to revert the chages.
+whereas reset is used to undo add command.
+
+$ sudo su
+
+$ cd swap
+
+$ vim test
+
+$ git add .
+
+$ git commit -m "revert commit"
+
+$ Git log --oneline
+
+$ git revert <commit id> message
+
+---------------------------------------------------------------------------
+
+Git clean
+
+this is used to remove the untract files.
+
+$ git clean -n > give the list of untrack files (same as git status)
+
+$ git clean -f > used to remove the untract files
+
+---------------------------
+
+
+
+
+
 
 
 
